@@ -80,8 +80,6 @@ class TempatController extends Controller
 	        if ($t) { 
 	            $this->flashSession->error("Tempat yang anda rekomkan sudah terdaftar.");
 	            return $this->response->redirect('../../mintarekom'.'/'.$id);
-	            // $this->response->redirect($_SERVER['HTTP_REFERER']);
-	            // echo ;
 	        }
 	        else
 	        {
@@ -193,7 +191,6 @@ class TempatController extends Controller
 	  	$idwil = $tmp->id_wilayah;
 	    $this->db->query("delete from Tempat where id_tempat='".$id."'");
 	    return $this->response->redirect('dashboard/cekadmin'.'/'.$idwil);
-	    // $this->response->redirect($_SERVER['HTTP_REFERER']);
 	  }
 	  public function editplaceAction($id){
         $_isAdmin = $this->session->get('admin');
@@ -213,33 +210,6 @@ class TempatController extends Controller
             $this->response->redirect('../../detailadmin'.'/'.$id);
         }
 	  }
-	  // public function storeeditplacAction(){
-	  	// $id_tempat = $this->request->getPost('id_tempat');
-    //     $nama_tempat = $this->request->getPost('nama_tempat');
-    //     // foto
-    //     $deskripsi = $this->request->getPost('deskripsi');
-    //     $alamat = $this->request->getPost('alamat');
-    //     $jam_buka = $this->request->getPost('jam_buka');
-    //     $harga = $this->request->getPost('harga');
-    //     // $req->menu = $this->request->getPost('menu');
-    //     $telepon = $this->request->getPost('telepon');
-    //     $ig = $this->request->getPost('ig');
-    //     $fb = $this->request->getPost('fb');
-    //     $avg_rate = $this->request->getPost('avg_rate');
-
-    //     $p = Tempat::findFirst("id_tempat='$id_tempat'")
-    //     $p->nama_tempat = $nama_tempat;
-    //     $p->ig = $ig;
-    //     $p->save();
-        // $data=array(
-        // "nama_tempat"=>$namatempat,
-        // "ig"=>$ig
-        // );
-
-        // $this->db->where('id_tempat', $id_tempat);
-        // $this->db->update('Tempat', $data);
-        // $this->response->redirect('../../detailadmin'.'/'.$id_tempat);
-	  // }
 
 	  public function storeeditplaceAction()
 	  {

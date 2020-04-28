@@ -43,13 +43,9 @@ class UserController extends Controller
         }
         else
         {
-        	//echo "hi canteq";
-        	// die();
            $usr->save();
            $this->response->redirect('login');
-         //    // printf (strlen($admin->password));
-            //echo "masuk";
-         //    // return $this->response->redirect('loginadmin');
+
         }
         
     }

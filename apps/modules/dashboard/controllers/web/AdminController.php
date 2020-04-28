@@ -34,18 +34,13 @@ class AdminController extends Controller
 
  	public function storeloginAction()
      {
-         // $username = $this->request->getPost('username');
-         // $password = $this->request->getPost('password');
-         // echo $pass;
-         // die();
          if($this->request->getPost('role')=="admin")
          {
          	$username_adm = $this->request->getPost('username');
          	$password_adm = $this->request->getPost('password');
 
  	        $user = Admin::findFirst("username_adm = '$username_adm'");
- 	        // echo $user->password;
- 	        // die();
+
  	        if ($user){
  	            if($password_adm == $user->password_adm){
  	                $this->session->set(
@@ -129,46 +124,8 @@ class AdminController extends Controller
     public function listuserAction()
     {
         $usr = Users::find();
-        // $data_usr = array();
-
-        //         foreach ($usr as $u)
-        //         {
-
-        //             if($u->status == 1)
-        //             {
-        //                 $status_sekarang = "Confirmed";
-        //             }
-        //             else
-        //             {
-        //                 $status_sekarang = "Belum";
-        //             }
-
-        //             $data_usr[] = array(
-        //                 'id' => $u->id_usr,
-        //                 'nama' => $u->nama_usr,
-        //                 'username' => $u->username_usr,
-        //                 'no_ktp' => $u->no_ktp,
-        //                 'email' => $u->email,
-        //                 'status' => $status_sekarang,
-        //             );
-        //         }
-
-        // if($usr->status == 1)
-        // {
-        //     // $status_sekarang = "Confirmed";
-        //      echo '<td>Confirmed</td>';
-        // }
-        // else
-        // {
-        //      echo '<td>Belum</td>';
-        // }
-
-       
-
         $this->view->usr = $usr;
         $this->view->pick('dashboard/listuser');
-                // $content = json_encode($data);
-                // return $this->response->setContent($content);
     }
 
     public function verifuserAction($id)
@@ -184,8 +141,6 @@ class AdminController extends Controller
         $req = Requesttempat::find();
         $this->view->req = $req;
         $this->view->pick('dashboard/listpermintaantempat');
-                // $content = json_encode($data);
-                // return $this->response->setContent($content);
     }
 
     public function verifrequAction($id)
