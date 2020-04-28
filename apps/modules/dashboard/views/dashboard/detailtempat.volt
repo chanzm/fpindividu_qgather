@@ -165,11 +165,16 @@
                                     </div>
                                     <div class="media-body">
                                         <p>{{t['comment']}}</p>
-                                        <p><img src="../../img/icon/star.png"> {{t['nilai']}}</p>
-                              
-                                       
-                                    
+                                        <p><img src="../../img/icon/star.png"> {{t['nilai']}}</p>                              
                                     </div>
+                                    {% if t['foto_rev'] %}
+                                    <div class="media-body">
+                                    <!--     <p>Photo</p> -->
+                                        <p><img class="img-thumbnail" src="../../images/review/{{t['foto_rev']}}" style="max-width: 100px;max-height: 100px" alt=""></p>
+                                    </div>
+                                    {% else %}
+                                        
+                                    {% endif %}
                                 </div>
                             </div>
                           
