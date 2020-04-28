@@ -170,6 +170,14 @@
                                     <p>{{t['comment']}}</p>
                                     <p><img src="../../img/icon/star.png"> {{t['nilai']}}</p>
                                 </div>
+
+                                <div class="media-body">
+                                    {% if t['foto_rev'] %}
+                                    <p><img class="img-thumbnail" src="../../images/review/{{t['foto_rev']}}" style="max-width: 100px;max-height: 100px" alt=""></p>
+                                    {% else %}
+                                    <p></p>                                     
+                                    {% endif %}
+                                </div>
                                 <div class="media-body">
                                     <a href="../../hapusreviewadmin/{{t['id_review']}}" class="button btn btn-md btn-secondary"><em class="fa fa-trash"></em></a>
                   <!--                  <a href="../../hapusreview/{{t['id_review']}}">Edit</a>
