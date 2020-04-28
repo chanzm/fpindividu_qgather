@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="form-group col-sm-12"><br>
                                         <p style="font-size: 12px;color: #a5bbd0;font-style: italic;font-family: "Open Sans", sans-serif">Upload Image</p>
-                                        <input type="file" class="input-large span10" id="foto" name="foto" placeholder="Upload Image">
+                                        <input type="file" class="input-large span10" id="foto_rev" name="foto_rev" placeholder="Upload Image">
 
                                     </div>
                          <!--            <div style="margin-left:20%" class="input-prepend" title="Identitas Penyewa"> <span class="add-on"><i class="halflings-icon user"></i></span>
