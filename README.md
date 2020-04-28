@@ -1,1 +1,3 @@
-# qgatherr
+# qgather
+
+FP INDIVIDU PBKK-D
