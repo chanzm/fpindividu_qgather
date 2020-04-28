@@ -52,7 +52,12 @@ class DashboardController extends Controller
         $this->view->wil4 = $wil4;
         $this->view->wil5 = $wil5;    
         $this->view->pick('dashboard/dashboardadmin');
-    }  
+    } 
+    
+       public function route404Action()
+    {
+        $this->view->pick('dashboard/error');
+    }
 
 
 }   
