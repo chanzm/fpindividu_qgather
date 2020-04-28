@@ -11,7 +11,7 @@ class Review extends Model
     public $id_usr;
     public $id_tempat;
     public $comment;
-    public $foto;
+    public $foto_rev;
     public $tgl_visit;
     public $nilai;
  }
