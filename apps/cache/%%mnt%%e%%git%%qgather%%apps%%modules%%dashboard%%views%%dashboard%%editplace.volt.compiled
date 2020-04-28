@@ -1,0 +1,55 @@
+
+						<form action="../../storeeditplace" method="post">
+							<div class="mt-10">
+								<input type="text" name="nama_tempat" placeholder="Nama Tempat" value="<?= $data->nama_tempat ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Tempat'" required
+									class="single-input">
+							</div>
+						
+
+							<div class="mt-10">
+								<textarea class="single-textarea" name="deskripsi" placeholder="deskripsi" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'deskripsi'" required><?= $data->deskripsi ?></textarea>
+							</div>
+							<div class="mt-10">
+								<input type="text" name="alamat" placeholder="Alamat" value="<?= $data->alamat ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'" required
+									class="single-input">
+							</div>
+							<div class="mt-10">
+								<input type="text" name="jam_buka" placeholder="Nama Tempat" value="<?= $data->jam_buka ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Tempat'" required
+									class="single-input">
+							</div>
+
+							<div class="mt-10">
+								<input type="text" name="harga" placeholder="Nama Tempat" value="<?= $data->harga ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Tempat'" required
+									class="single-input">
+							</div>
+
+							<div class="mt-10">
+								<input type="text" name="telepon" placeholder="Nama Tempat" value="<?= $data->telepon ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Tempat'" required
+									class="single-input">
+							</div>
+
+							<div class="mt-10">
+								<input type="text" name="ig" placeholder="Nama Tempat" value="<?= $data->ig ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Tempat'" required
+									class="single-input">
+							</div>
+
+							<div class="mt-10">
+								<input type="text" name="avg_rate" placeholder="Nama Tempat" value="<?= $data->avg_rate ?>"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Tempat'" required
+									class="single-input">
+							</div>
+
+							<div class="form-group">
+					            <input type="hidden" name="id_tempat" id="id" value=<?= $data->id_tempat ?>>
+					        </div>
+
+							<button style="margin-top: 40px;" type="submit" class="genric-btn success">Selesai</button>
+						
+						</form>
